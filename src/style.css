@@ -1,0 +1,101 @@
+body{
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#pageContainer{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 60px 400px 250px 20px;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 20px;
+    background-color: rgb(100, 100, 183);
+    
+    
+}
+
+.sidebar{
+    display: grid;
+    grid-row: 2/4;
+    background-color: rgb(174, 180, 180);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    
+    
+}
+
+.projContainer{
+    padding-bottom: 200px;
+}
+
+.list{
+   display: grid;
+   grid-row: 2/4;
+   grid-column: 2/4;
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    grid-row: 3/4;
+    font-size: 20px;
+    background-color: rgb(100, 100, 183);
+    margin-top: -20px;
+}
+
+button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    height: 48px;
+}
+    
+button:hover{
+    color: #fff;
+     
+    background-color: #616467;
+}
+
+.submitBtn, .cancelBtn{
+    height: 10px;
+    padding-top: 5px;
+
+}
+
+.submitBtn{
+    margin-top: 15px;
+    background-color: lightgreen;
+}
+
+.cancelBtn{
+    background-color: lightcoral;
+}
+
+
